@@ -12,7 +12,7 @@
 
 **①** stack 인터페이스
 
-```
+```java
 puvlic interface Stack{
     int push(int x);
     int pop();
@@ -30,7 +30,7 @@ puvlic interface Stack{
 
   *ArrayStack.java*
 
-  ```
+  ```java
   public class ArrayStack implements Stack{
   	private int max;			
   	private int top;	
@@ -98,7 +98,7 @@ puvlic interface Stack{
 
   *StackNode.java*
 
-  ```
+  ```java
   public class StackNode{
   	int data;
       StackNode next;
@@ -107,7 +107,7 @@ puvlic interface Stack{
 
   *LinkedStack.java*
 
-  ```
+  ```java
   public class LinkedStack implements Stack{
       private StackNode top;
       public LinkedStack(){
@@ -192,7 +192,7 @@ puvlic interface Stack{
 
    - *Formula.java*
 
-   ```
+   ```java
    public class Fomula{
        private String exp;
        private int expSize;
@@ -279,7 +279,7 @@ puvlic interface Stack{
 
         - *Formula.java*
 
-          ```
+          ```java
           public void toPostfix(String infix){
               char testCh;
               exp = infix;
@@ -315,7 +315,7 @@ puvlic interface Stack{
 
      - *Test.java*
 
-       ```
+       ```java
        public class Test{
            public static void main(String[] args){
        		String postfix = "35*62/-";
@@ -355,5 +355,5 @@ puvlic interface Stack{
        }
        ```
 
-[출처] <https://songeunjung92.tistory.com/18>
+[출처](https://songeunjung92.tistory.com/18)
 
