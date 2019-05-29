@@ -315,7 +315,7 @@ puvlic interface Stack{
 
      - *Test.java*
 
-       ```
+       ```java
        public class Test{
            public static void main(String[] args){
        		String postfix = "35*62/-";
@@ -355,5 +355,5 @@ puvlic interface Stack{
        }
        ```
 
-[출처] <https://songeunjung92.tistory.com/18>
+[출처](https://songeunjung92.tistory.com/18)
 
