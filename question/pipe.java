@@ -18,7 +18,7 @@ public class pipe {
 	        		stack.push(brk);
 	        	else {
 	        		stack.pop();
-	        		if(pre=='(')
+	        		if(pre=='(')//arrangement.charAt(i-1)=='('
 	        			answer += stack.size();
 	        		else
 	        			answer++;

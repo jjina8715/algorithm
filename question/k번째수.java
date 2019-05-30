@@ -1,7 +1,7 @@
 package practice;
 
 import java.util.Arrays;
-//프로그래머스 정렬
+
 public class k번째수 {
 	public static void main(String args[]) {
 		int[] arr = {1, 5, 2, 6, 3, 7, 4};
@@ -14,7 +14,6 @@ public class k번째수 {
 	        int[] answer = new int[commands.length];
 	        int[] temp = null;
 	        int sta, end;
-	        
 	        for(int i = 0; i<commands.length;i++) {
 	        	sta = commands[i][0]-1;
 	        	end = commands[i][1]-1;
@@ -29,14 +28,12 @@ public class k번째수 {
 	        int[] answer = new int[commands.length];
 	        int[] temp = null;
 	        int sta, end, min, tmp;
-	        
 	        for(int i = 0; i<commands.length;i++) {
 	        	sta = commands[i][0]-1;
 	        	end = commands[i][1]-1;
 	        	temp = new int[end-sta+1];
 	        	for(int j = 0; j<temp.length;j++) 
 	        		temp[j] = array[j+sta];
-	        	
 	        	for(int k = 0; k<temp.length-1;k++) {
 	        		min = k;
 	        		for(int l = k+1; l<temp.length;l++) 
