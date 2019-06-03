@@ -120,19 +120,73 @@
 
      2. 큐에서 꺼낸 노드와 인접한 노드들을 모두 차례로 방문
 
-        큐에서 꺼낸 노드를 방문하고 인접한 노드들을 모두 방문(없)
-
-
-
-
-
-
-
-
-
-<http://ddmix.blogspot.com/2015/06/cppalgo-21-weighted-graph.html>
-
-<https://gmlwjd9405.github.io/2018/08/14/algorithm-dfs.html>
-
-[libre](https://librewiki.net/wiki/%EC%8B%9C%EB%A6%AC%EC%A6%88:%EC%88%98%ED%95%99%EC%9D%B8%EB%93%AF_%EA%B3%BC%ED%95%99%EC%95%84%EB%8B%8C_%EA%B3%B5%ED%95%99%EA%B0%99%EC%9D%80_%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B3%BC%ED%95%99/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%EA%B8%B0%EC%B4%88)
-
+        큐에서 꺼낸 노드를 방문하고 인접한 노드들을 모두 방문, 없다면 큐의 앞에서 노드를 꺼낸다.
+        
+        큐에 방문된 노드를 삽입
+        
+     3. 큐가 소진될때까지 계속한다.
+     
+   - 구현
+   
+     - 방법 : 자료구조 큐Queue를 이용
+     - BFS 의사코드(pseudocode)
+   
+     ```java
+     void search(Node root){
+         Queue queue = new Queue();
+         root.marked = true;
+         queue.enqueue(root);
+         while(!queue.isEmpty()){
+             Node r = queue.dequeue();
+             visit(r);
+             foreach(Node n in r.adjacent){
+                 if(n.marked == false){
+                     n.marked = true;
+                     queue.enqueue(n);
+                 }
+             }
+         }
+     }
+     ```
+   
+     - BFS 구현(java)
+   
+     ```java
+     class Graph{
+     	private int cnt;
+         private LinkedList<Integer> adj[];
+         Graph(int cnt){
+     		this.cnt = cnt;
+             adj = new LinkedList[cnt];
+             for(int i = 0; i<cnt; i++)
+                 adj[i] = new linkedList();
+         }
+         void addEdge(int v, int data){
+             adj[v].add(data);
+         }
+         void startDFS(int s){
+             LinkedList<Integer> queue= new boolean[cnt];
+             int n;
+             visited[s] = true;
+             queue.add(s);
+             while(queue.size()!=0){
+                 s.queue.pull();
+                 Iterator<Integer> it - adj[s].listIterator();
+                 while(it.hasNext()){
+                   n = i.next();
+                     if(!visited[n]){
+     					visited[n] = true;
+                         queue.add(n);
+                     }
+                 }
+             }
+          }
+     }
+     ```
+   
+   - 시간 복잡도
+   
+     - 정점의 수:n, 간선의 수:e
+       - 인접 리스트로 표현된 그래프 : O(n+e)
+       - 인접 행렬로 표현된 그래프 : O(n^2)
+     - 그래프 내에 적은 숫자의 간선만을 가지는 희소 그래프(Sparse Graph)의 경우 인접 행렬보다 인접 리스트를 사용하는 것이 유리
