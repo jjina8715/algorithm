@@ -24,12 +24,15 @@ public class Solution {
 				return (o2+o1).compareTo(o1+o2);
 			}
         });
-       if(arr.get(0)=="0")
-    	   answer = "0";
-       else
-    	   for(String i:arr)
-    		   answer+=i;
-        
+        if(arr.get(0)=="0") 
+        	answer = "0";
+        else{
+            StringBuffer sb = new StringBuffer();
+        	for(String i : arr) {
+        		sb.append(i);
+        	}
+        	answer = sb.toString();
+        }
         return answer;
     }
 }
