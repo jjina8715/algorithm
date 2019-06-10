@@ -261,7 +261,7 @@ class Node{
          Node p = node;
          Node delete = null;
          Node parent = null;
-         while(q != null){
+         while(p != null){
              if(p.getData() == key){
                  delete = p;
                  break;
