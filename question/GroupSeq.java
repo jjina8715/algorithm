@@ -6,8 +6,12 @@ public class GroupSeq {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		int cnt = 0, group = 1, n = 0;
 		long k = in.nextInt();
+		
+		System.out.println(solution(k));
+	}
+	public static long solution(long k) {
+		/*long cnt = 0, group = 1, n = 0;
 		while(cnt < k) {
 			cnt++;
 			if((++n)==group) {
@@ -15,7 +19,12 @@ public class GroupSeq {
 				group++;
 			}
 		}
-		System.out.println(n);
+		return n;
+		*/
+		long cnt = 0, group = 0;
+		while(cnt<k) {
+			cnt += ++group;
+		}
+		return group-(cnt-k);
 	}
-
 }
