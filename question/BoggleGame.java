@@ -15,8 +15,9 @@ public class BoggleGame {
 		System.out.println(search(board, new String("SO"), 0));
 		System.out.println(search(board, new String("BEATIFUL"), 0));
 	}
-	public static boolean search(char[][] board, String word, int wIdx, ) {
+	public static boolean Boggle(char[][] board, String word, int wIdx, ) {
 			
 		return true;
 	}
+	public static boolean find()
 }
