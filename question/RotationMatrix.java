@@ -41,17 +41,17 @@ public class RotationMatrix {
 			result[mCnt/2][mCnt/2] = arr[mCnt/2][(mCnt)/2];
 		mCnt--;
 		while (mCnt > 0) {
-			for (int i = 0; i < mCnt; i++)
-				result[x][y + 1] = arr[x][y++];
+			for (int i = 0; i < mCnt; i++, y++)
+				result[x][y + 1] = arr[x][y];
 
-			for (int i = 0; i < mCnt; i++)
-				result[x + 1][y] = arr[x++][y];
+			for (int i = 0; i < mCnt; i++, x++)
+				result[x + 1][y] = arr[x][y];
 
-			for (int i = 0; i < mCnt; i++)
-				result[x][y - 1] = arr[x][y--];
+			for (int i = 0; i < mCnt; i++, y--)
+				result[x][y - 1] = arr[x][y];
 
-			for (int i = 0; i < mCnt; i++)
-				result[x - 1][y] = arr[x--][y];
+			for (int i = 0; i < mCnt; i++, x--)
+				result[x - 1][y] = arr[x][y];
 
 			y++;
 			x++;
@@ -70,33 +70,33 @@ public class RotationMatrix {
 		mCnt--;
 		while (mCnt > 0) {
 			if (x % 2 == 0) {
-				for (int i = 0; i < mCnt; i++)
-					result[x][y + 1] = arr[x][y++];
+				for (int i = 0; i < mCnt; i++, y++)
+					result[x][y + 1] = arr[x][y];
 
-				for (int i = 0; i < mCnt; i++)
-					result[x + 1][y] = arr[x++][y];
+				for (int i = 0; i < mCnt; i++, x++)
+					result[x + 1][y] = arr[x][y];
 
-				for (int i = 0; i < mCnt; i++)
-					result[x][y - 1] = arr[x][y--];
+				for (int i = 0; i < mCnt; i++, y--)
+					result[x][y - 1] = arr[x][y];
 
-				for (int i = 0; i < mCnt; i++)
-					result[x - 1][y] = arr[x--][y];
+				for (int i = 0; i < mCnt; i++, x--)
+					result[x - 1][y] = arr[x][y];
 
 				y++;
 				x++;
 			}
 			else {
-				for (int i = 0; i < mCnt; i++)
-					result[x + 1][y] = arr[x++][y];
+				for (int i = 0; i < mCnt; i++, x++)
+					result[x + 1][y] = arr[x][y];
 
-				for (int i = 0; i < mCnt; i++)
-					result[x][y + 1] = arr[x][y++];
+				for (int i = 0; i < mCnt; i++, y++)
+					result[x][y + 1] = arr[x][y];
 
-				for (int i = 0; i < mCnt; i++)
-					result[x - 1][y] = arr[x--][y];
+				for (int i = 0; i < mCnt; i++, x--)
+					result[x - 1][y] = arr[x][y];
 
-				for (int i = 0; i < mCnt; i++)
-					result[x][y - 1] = arr[x][y--];
+				for (int i = 0; i < mCnt; i++, y--)
+					result[x][y - 1] = arr[x][y];
 
 				y++;
 				x++;
