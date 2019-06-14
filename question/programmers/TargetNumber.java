@@ -1,7 +1,5 @@
 package programmers;
 
-import java.util.LinkedList;
-
 public class TargetNumber {
 
 	public static void main(String[] args) {
