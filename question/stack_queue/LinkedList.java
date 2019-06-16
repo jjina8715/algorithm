@@ -43,14 +43,14 @@ public class LinkedList {
 
 	protected Boolean removeLast() {
 		if(last!=null) {
-			if(first!=last) {
+			if(first==last) {
+				first=last=null;
+			}else {
 				LinkedNode cur = first;
 				while(cur.next != last) {
 					cur = cur.next;
 				}
 				last = cur;
-			}else {
-				first=last=null;
 			}
 			return true;
 		}
