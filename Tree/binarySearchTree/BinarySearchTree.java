@@ -164,6 +164,22 @@ public class BinarySearchTree {
 			result.add(level);
 		}
 		System.out.println(result);
+	/*
+	Queue<Node> q = new LinkedList<Node>();
+		Node delete;
+		q.add(current);
+		System.out.print("[");
+		while(!q.isEmpty()) {
+			delete=q.remove();
+			System.out.print(delete.val+" ");
+			if(delete.left!=null) {
+				q.add(delete.left);
+			}
+			if(delete.right!=null)
+				q.add(delete.right);
+		}
+		System.out.print("]");
+	*/
 
 	}
 }
