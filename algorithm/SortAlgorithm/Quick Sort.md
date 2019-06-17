@@ -47,6 +47,15 @@ public static void quickSort(String[] arr, int left, int right) {
 	}
 ```
 
-<https://gmlwjd9405.github.io/2018/05/10/algorithm-quick-sort.html>
+- 퀵 정렬의 특징
 
-[https://ko.wikipedia.org/wiki/%ED%80%B5_%EC%A0%95%EB%A0%AC#java](https://ko.wikipedia.org/wiki/퀵_정렬#java)
+  - 정렬된 리스트에 대해서는 불균형 분할에 의해 오히려 수행시간이 더 걸린다.
+
+  - 퀵정렬의 불균형 분할을 방지하기 위하여 피벗을 선택할 때 더욱 리스트를 균등하게 분할 가능한 데이터를 선택 ex) 데이터 몇개를 선택해 중간값을 피벗으로 선택
+
+- 퀵 정렬의 시간 복잡도
+
+  - 최선의 경우 : O(nlog2n)
+  - 최악의 경우 : O(n^2)
+  - 평균 : O(nlog2n), 시간 복잡도가 같은 정렬 알고리즘과 비교했을 때도 가장 빠르다.
+    - b/c 불필요한 데이터의 이동 감고, 먼거리의 데이터를 교환, 한번 결정된 피벗들이 추후 연산에서 제외
