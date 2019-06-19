@@ -33,7 +33,6 @@ public class Top {
 	        			answer[i] = idx;
 	        			break;
 	        		}
-	        		answer[i] = 0;
 	        	}
 	        }
 	        return answer;
@@ -56,7 +55,6 @@ public class Top {
 	        			answer[i] = j+1;
 	        			break;
 	        		}
-	        		answer[i] = 0;
 	        	}
 	        }
 	        return answer;
