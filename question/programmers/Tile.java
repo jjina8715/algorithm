@@ -8,8 +8,7 @@ public class Tile {
     public static long solution(int n) {
     	long answer = 0;
     	long[] sides = new long[n];
-    	sides[0] = 1;
-    	sides[1] = 1;
+    	sides[0] = sides[1] = 1;
     	if(n==1)
     		return 4;
     	for(int i = 2; i<n;i++)
