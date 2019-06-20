@@ -42,8 +42,3 @@
   
 
 
-
-[https://namu.wiki/w/%EC%84%A0%ED%98%95%20%EB%B3%80%ED%99%98](https://namu.wiki/w/선형 변환)
-
-[https://namu.wiki/w/%EB%B2%A1%ED%84%B0%20%EA%B3%B5%EA%B0%84?from=%EB%B2%A1%ED%84%B0%EA%B3%B5%EA%B0%84](https://namu.wiki/w/벡터 공간?from=벡터공간)
-
