@@ -1,10 +1,12 @@
 # AVL Tree
 
 - 서브트리의 높이를 적절하게 제어해 전체 트리가 어느 한쪽으로 늘어지지 않도록 한 BST의 일종.
+  
   - 요소를 삽입하거나 삭제하는 과정에서 서브 트리를 재구성해 트리전체의 균형을 맞춘다.
 - 일종의 균형 잡힌 이진 트리
-  - 2-3트리, 2-3-4트리, Red-Black트리, B트리 
-
+  
+- 2-3트리, 2-3-4트리, Red-Black트리, B트리 
+  
 - 고안한 사람들의 이름의 앞글자를 따서 AVL(Adelson-Velskii Landis)트리가 지음
 
 - 균형 인수(Balance Factor) = 왼쪽 서브트리의 높이 - 오른쪽 서브트리의 높이
@@ -60,7 +62,7 @@
 
 
 
-
+[https://ratsgo.github.io/data%20structure&algorithm/2017/10/27/avltree/](https://ratsgo.github.io/data structure&algorithm/2017/10/27/avltree/)
 
 
 
