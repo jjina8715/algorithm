@@ -56,17 +56,42 @@
 
 - double rotation
 
-  - rotation 한 차례만으로 원하느 삽입 결과를 내지 못하는 경우
+  - rotation 한 차례만으로 원하는 삽입 결과를 내지 못하는 경우
+- double rotation은 V(U의 자식노드, BF 절대값이 1이하)를 중심으로 실시(U는 BF 절대값이 2 이상이면서 새 노드와 가장 가까운 조상 노드)
+    - V가 U의 왼쪽 자식 노드, V의 오른쪽 서브트리에 새 노드 삽입
+    - V가 U의 오른쪽 자식 노드, V의 왼쪽 서브트리에 새 노드 삽입
 
-  - double rotation은 V(U의 자식노드, BF 절대값이 1이하)를 중심으로 실시(U는 BF 절대값이 2 이상이면서 새 노드와 가장 가까운 조상 노드)
+- 시나리오별 rotation
 
+  - 시나리오1 : U(루트노드)의 왼쪽 자식노드의 왼쪽 서브트리 A에 새 노드 삽입 : single right rotation
+  - 시나리오2 : U의 왼쪽 자식노드의 오른쪽 서브트리 A에 새 노드 삽입 : double rotation(left-right)
+  - 시나리오3 : U의 오른쪽 자식노드의 왼쪽 서브트리 A에 새 노드 삽입 : double rotation(right-left)
+  - 시나리오4 : U의 오른쪽 자식노드의 오른쪽 서브트리 A에 새 노드 삽입 : single left rotation
 
+  ```python
+  def rebalance(self): 
+      self.update_heights(False)
+      self.update_balances(False)
+      while self.balance < -1 or self.balance > 1:
+          if self.balance > 1:
+              if self.node.left.balance < 0:
+                  self.node.left.lrotate()
+                  self.update_heights()
+      			self.update_balances()
+              self.rrotate()
+              self.update_heights()
+      		self.update_balances()
+          if self.balance < -1:
+              if self.node.right.balance > 0:
+                  self.node.right.rrotate()
+                  self.update_heights()
+      			self.update_balances()
+              self.lrotate()
+              self.update_heights()
+     	 		self.update_balances()
+  ```
 
-[https://ratsgo.github.io/data%20structure&algorithm/2017/10/27/avltree/](https://ratsgo.github.io/data structure&algorithm/2017/10/27/avltree/)
-
-
-
-
+  
 
 
 
