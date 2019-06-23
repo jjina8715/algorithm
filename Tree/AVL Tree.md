@@ -70,38 +70,70 @@
 
   ```python
   def rebalance(self): 
+      #현재 노드(루트)에서 잎새노드에 이르는 경로의 모든 노드에 대해 BF 업데이트
       self.update_heights(False)
       self.update_balances(False)
       while self.balance < -1 or self.balance > 1:
+          #U의 왼쪽 서브트리 높이가 오른쪽보다 크므로 시나리오 1 or 2에 해당
           if self.balance > 1:
+              #시나리오 2에 해당 우선 single left rotation
               if self.node.left.balance < 0:
                   self.node.left.lrotate()
                   self.update_heights()
       			self.update_balances()
+              #시나리오 1에 해당 single right rotation(시나리오 2도 수행)
               self.rrotate()
               self.update_heights()
       		self.update_balances()
+          #U의 오른쪽 서브트리 높이가 왼쪽보다 크므로 시나리오 3 or 4에 해당
           if self.balance < -1:
+              # 시나리오 3에 해당 우선 single right rotation
               if self.node.right.balance > 0:
                   self.node.right.rrotate()
                   self.update_heights()
       			self.update_balances()
+              #시나리오 4에 해당 single left rotation(시나리오 4도 수행)
               self.lrotate()
               self.update_heights()
      	 		self.update_balances()
   ```
 
-  
+- 삽입/삭제 연산
+
+  - AVL 트리의 삽입 연산은 기본적으로 이진탐색트리와 동일하다. 
+
+  ```python
+  def insert(self, key):
+      tree = self.node
+      newnode = Node(key)
+      if tree==None:
+          self.node = newnode
+          self.node.left = AVLTree()
+          self.node.right = AVLTree()
+          debug("Inserted key["+str(key)+"]")
+      elif key < tree.key:
+          self.node.left.insert(key)
+      elif key > tree.key:
+          self.node.right.insert(key)
+      else:
+          debug("Key["+str(key)+"] already in tree")
+      self.rebalance()
+  ```
+
+  - 삭제 연산도 이진탐색트리와 동일하지만 삭제 후 balance Factor가 깨진 노드가 있을 수 있으니 rebalance한다.
+
+- 계산 복잡성(높이가 h)
+
+  - 삽입연산 : O(h)이다. b/c BF 계산 : O(h), rotation : O(1)
+  - 삭제 연산 : O(h)이다. b/c BF 계산 : O(h), rotation : O(1)
+
+  - ALV트리 노드 수가 n개일 때 높이 h의 하한은 2log2 n이라고 한다. 즉, O(h) = O(log n)
 
 
 
 
 
-
-
-
-
-
+[참고]([https://ratsgo.github.io/data%20structure&algorithm/2017/10/27/avltree/](https://ratsgo.github.io/data structure&algorithm/2017/10/27/avltree/))
 
 
 
