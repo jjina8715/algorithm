@@ -55,17 +55,17 @@
   - 의사 코드
 
   > for each edge (u,v) ∈ E[G]
-  > 	do f[u, v] :arrow_left: 0
-  >          f[v, u] :arrow_left: 0
+  > 	do f[u, v] ​<-​ 0
+  >          f[v, u] <-​ 0
   >  while thoro exists a path p from s to t in the residual network G<sub>f</sub>
   >
-  > ​    do c<sub>f</sub>(p) :arrow_left: min{ c<sub>f</sub>(u,v) : (u,v) is in p}
+  > ​    do c<sub>f</sub>(p) ​<-​ min{ c<sub>f</sub>(u,v) : (u,v) is in p}
   >
   > ​        for each edge (u,v) in p
   >
-  > ​            do f[u, v] :arrow_left: f[u, v] + c<sub>f</sub>(p)
+  > ​            do f[u, v] ​<- ​ f[u, v] + c<sub>f</sub>(p)
   >
-  > ​                 f[v, u] :arrow_left: -f[u, v]
+  > ​                 f[v, u]  <- -f[u, v]
 
 - 이 알고리즘에서 증가 경로를 찾는 방법은 기본적으로 DFS이다. DFS의 시간 복잡도는 O(V+E)이다. 문제의 답이 f이고 모든 용량 단위가 정수라고 할 때 한 번 경로를 찾았을 때 유량이 최소 1씩은 보내지므로, 증가 경로를 찾는  루프는 최대 f번 실행된다.
 
@@ -85,11 +85,11 @@
 
     - 컷의 유량은 Source->Sink의 유량과 같다
 
-    - 컷의 유량 <= 컷의 용량
+    - 컷의 유량 <= 컷의 용량 
 
-      :arrow_right: 네트워크에서 용량이 가장 작은 컷을 찾아내는 문제를 최소 컷(min cut) 문제라 함
+      -> 네트워크에서 용량이 가장 작은 컷을 찾아내는 문제를 최소 컷(min cut) 문제라 함
 
-      :arrow_right: 최소 컷 : 용량과 유량이 같은 컷을 찾는다.
+      -> 최소 컷 : 용량과 유량이 같은 컷을 찾는다.
 
 - 즉, 최소컷을 찾기 위해서는 최대 유량을 찾으면 된다.
 
