@@ -170,8 +170,8 @@
              visited[s] = true;
              queue.add(s);
              while(queue.size()!=0){
-                 s.queue.pull();
-                 Iterator<Integer> it - adj[s].listIterator();
+                 s=queue.pull();
+                 Iterator<Integer> it = adj[s].listIterator();
                  while(it.hasNext()){
                    n = i.next();
                      if(!visited[n]){
