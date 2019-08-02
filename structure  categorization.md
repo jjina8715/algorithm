@@ -1,4 +1,4 @@
-# structure  categorization
+# categorization
 
 - Linear Structure '선형 자료구조'
 
@@ -18,3 +18,12 @@
 - nonlinear structure '비선형 자료구조'
   - 선형구조가 아닌 모든 자료구조, i번째 값을 탐색한 뒤의 i+1이 정해지지 않은 구조
   - 그래프, 트리
+
+
+
+- quest
+  - RESTful API
+  - Microservices Architecture
+  - NDK/JNI
+  - RDB
+  - PWA
