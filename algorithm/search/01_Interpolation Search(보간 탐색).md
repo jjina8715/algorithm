@@ -24,7 +24,7 @@ int inter_search(int a[], int n, int key){
         if(key>a[middle]) left = middle+1;
         else if(key<a[middle]) right = middle-1;
         else return middle;
-    }
+    } 
     return -1;
 }
 ```
