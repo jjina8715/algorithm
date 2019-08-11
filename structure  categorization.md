@@ -27,7 +27,3 @@
   - NDK/JNI
   - RDB
   - PWA
-  - 정규 표현식 
-    - https://highcode.tistory.com/6
-    - https://postitforhooney.tistory.com/entry/JavaRegex-%EC%9E%90%EB%B0%94-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0-%EC%98%88%EC%A0%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0
-
