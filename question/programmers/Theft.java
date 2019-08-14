@@ -1,4 +1,4 @@
-package practice;
+﻿package practice;
 
 public class Theft {
 	public static void main(String[] args) {
@@ -11,13 +11,13 @@ public class Theft {
 		
 		stolen[0] = stolen[1] =  money[0];//첫번째 집을 훔쳤을 때
 		for (int i = 2; i < len - 1; i++) {
-			stolen[i] = Math.max(stolen[i-2]+money[i], stolen[i-2]);
+			stolen[i] = Math.max(stolen[i-2]+money[i], stolen[i-1]);
 		}
 		answer = stolen[len-2];
 		stolen[0] = 0;
 		stolen[1] = money[1];//두번째 집을 훔쳤을 때
 		for (int i = 2; i < len; i++) {
-			stolen[i] = Math.max(stolen[i-2]+money[i], stolen[i-2]);
+			stolen[i] = Math.max(stolen[i-2]+money[i], stolen[i-1]);
 		}
 		answer = Math.max(answer, stolen[len-1]);
 		return answer;
