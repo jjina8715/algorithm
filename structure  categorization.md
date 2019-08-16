@@ -22,7 +22,6 @@
 
 
 - quest
-  - RESTful API
   - Microservices Architecture
   - NDK/JNI
   - RDB
