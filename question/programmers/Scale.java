@@ -1,7 +1,6 @@
-package programmers;
+package practice;
 
 import java.util.Arrays;
-import java.util.LinkedList;
 
 public class Scale {
 
@@ -9,13 +8,14 @@ public class Scale {
 		System.out.println(solution(new int[] {3,1,6,2,7,30,1}));
 	}
 	public static int solution(int[] weight) {
-        int answer = 0;
+        int answer = 1;
         Arrays.sort(weight);
-        LinkedList<Integer> list = new LinkedList<>();
         
-        for(int w : weight)
-        	list.add(w);
-        
+        for(int i = 0;i<weight.length;i++) {
+        	if(answer<weight[i])
+        		break;
+        	answer+=weight[i];
+        }
         return answer;
     }
 }
