@@ -15,9 +15,10 @@
 
   **최대 힙의 삽입**
 
-  	1. 힙에 새로운 요소가 들어오면, 일단 새로운 노드를 힙의 마지막 노드에 이어서 삽입
-   	2. 새로운 노드를 부모 노드들과 교환해서 힙의 성질을 만족
-
+  1. 힙에 새로운 요소가 들어오면, 일단 새로운 노드를 힙의 마지막 노드에 이어서 삽입
+  
+ 	2. 새로운 노드를 부모 노드들과 교환해서 힙의 성질을 만족
+  
   ```java
   void insertMaxHeap(int x){
       maxHeap[++heapSize] = x;
@@ -28,14 +29,14 @@
               break;
       }
   }
-  ```
-
-  **최대 힙의 삭제**
-
+```
+  
+**최대 힙의 삭제**
+  
   1. 최대 힙에서 최댓값은 ㄹ트노드이므로 루트 노드가 삭제
   2. 삭제된 루트 노드에는 힙의 마지막 노드를 대입
-  3. 힙을 재구성
-
+3. 힙을 재구성
+  
   ```java
   void deleteMaxHeap(){
       if(heapSize==0)
@@ -56,20 +57,54 @@
       }
       return item;
   }
-  ```
-
-  **힙 정렬**
-
+```
+  
+**힙 정렬**
+  
   1. 1차원 배열로 쉽게 구현(부모가 i라면 왼쪽 자식은 2 * i, 오른쪽 자식은 2 * i+1이 인덱스)
   2. 정렬해야할 n개의 요소들을 1차원 배열에 기억한 후 최대 힙 삽입을 통해 차례대로 삽입
-  3. 최대 힙으로 구성된 배열에서 최댓값부터 삭제
-
-  ```java
-  void heapSort()
-  ```
-
+3. 최대 힙으로 구성된 배열에서 최댓값부터 삭제
   
-
-<https://mygumi.tistory.com/310>
-
-<https://gmlwjd9405.github.io/2018/05/10/algorithm-heap-sort.html>
+  ```java
+  void heapSort(int[] array) {
+    int n = array.length;
+      // init, max heap
+      for (int i = n / 2 - 1; i >= 0; i--) {
+          heapify(array, n, i);
+      }
+      // for extract max element from heap
+      for (int i = n - 1; i > 0; i--) {
+          swap(array, 0, i);
+          heapify(array, i, 0);
+      }
+  }
+  void heapify(int array[], int n, int i) {
+      int p = i;
+      int l = i * 2 + 1;
+      int r = i * 2 + 2;
+   
+      if (l < n && array[p] < array[l])
+          p = l;
+      if (r < n && array[p] < array[r]) 
+          p = r;
+  
+      if (i != p) {
+          swap(array, p, i);
+          heapify(array, n, p);
+      }
+  }
+  void swap(int[] array, int a, int b) {
+      int temp = array[a];
+      array[a] = array[b];
+      array[b] = temp;
+  }
+  ```
+  
+  - 유용
+    - 가장 크거나 작은 값을 구할 때
+      - 최소 힙 또는 최대 힙의 루트 값이기 때문
+    - 최대 k만큼 떨어진 요소들을 정렬할 때
+      -   일반적으로 삽입정렬을 활용할 수 있지만, 힙 정렬을 통해서 더욱 개선
+  - 시간 복잡도
+    - 힙 트리의 전체 높이가 거의 log2(n)이므로 하나의 요소를 힙에 정렬하거나 삭제할 때 힙을 재정비하는 시간이 log2(n)만큼 소요
+    - 요소의 개수가 n개이므로 전체적으로 O(nlog2(n))의 시간이 소요
