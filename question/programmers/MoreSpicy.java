@@ -12,10 +12,9 @@ public class MoreSpicy {
         int answer = 0;
         Queue<Integer> scv = new PriorityQueue<Integer>(scoville.length);
         
-        for(int i = 0; i<scoville.length; i++) {
+        for(int i = 0; i<scoville.length; i++)
         	scv.add(scoville[i]);
-        }
-        
+
         while(scv.peek()<K&&scv.size()>=2) {
         	scv.offer(scv.poll()+scv.poll()*2);
         	answer++;
