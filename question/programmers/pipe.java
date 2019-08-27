@@ -2,7 +2,7 @@ package practice;
 
 import java.util.Stack;
 
-public class pipe {
+public class Pipe {
 	public static void main(String[] args) {
 		String arrangement = "()(((()())(())()))(())";
 		int cnt = solution(arrangement);
