@@ -2,7 +2,7 @@
 
 [DataStructure](#DataStructure)
 
-[Algirithm](#Algirithm)
+[Algirithm](#Algorithm)
 
 [알고리즘 문제 풀이](#알고리즘 문제 풀이)
 
@@ -39,7 +39,7 @@
 
 <hr>
 
-## Algirithm [link](./Algirithm)
+## Algorithm [link](./algorithm)
 
 - [search](./algorithm/search/)
   - Interpolation search [link](./algorithm/search/)
@@ -65,7 +65,7 @@
 
 <hr>
 
-## 알고리즘 문제 풀이
+## 알고리즘 문제 풀이 [link](./question)
 
 ### 1. 프로그래머스
 
