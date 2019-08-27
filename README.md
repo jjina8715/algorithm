@@ -4,7 +4,7 @@
 
 [Algorithm](#Algorithm)
 
-[알고리즘 문제 풀이](#알고리즘 문제 풀이)
+[알고리즘 문제 풀이](#알고리즘문제풀이)
 
 <hr>
 
@@ -19,20 +19,20 @@
   - Deque-double ended queue
 - [Stack](./datastructure/Stack.md)
 - [Heap](./datastructure/Heap.md)
-  - Heap sort [link](./SortAlgorithm/Heap Sort.md)
+  - Heap sort [link](./SortAlgorithm/HeapSort.md)
 - [Tree](./datastructure/Tree/)
   - binarySearchTree [link](./datastructure/Tree/binarySearchTree/)
-  - AVLTree [link](./datastructure/Tree/AVL Tree.md)
-  - MST [link](./datastructure/Tree/MST(Munimum Spanning Tree).md)
+  - AVLTree [link](./datastructure/Tree/AVLTree.md)
+  - MST [link](./datastructure/Tree/MST.md)
     - Kruskal algorithm
     - Prim algorithm
   - Tree [link](./datastructure/Tree/Tree.md/)
   - TreeTraversal [link](./datastructure/Tree/TreeTraversal.md)
     - BinarySearchTree Traversal
 - [Graph](./datastructure/graph/)
-  - GraphSearch [link](./datastructure/graph/Graph Search.md)
+  - GraphSearch [link](./datastructure/graph/GraphSearch.md)
   - Graph [link](./datastructure/graph/Graph.md)
-- [UnionFind](./datastructure/Union Find.md)
+- [UnionFind](./datastructure/UnionFind.md)
   - Didjoint Set
 
 ※ [Big-O](./datastructure/Big-O.md)
@@ -45,27 +45,27 @@
   - Interpolation search [link](./algorithm/search/)
   - backtracking [link](./algorithm/search/)
 - [sort](./algorithm/SortAlgorithm/)
-  - bubble sort [link](./algorithm/SortAlgorithm/Bubble Sort.md)
-  - heap sort [link](./algorithm/SortAlgorithm/Heap Sort.md)
-  - insertion sort [link](./algorithm/SortAlgorithm/Insertion Sort.md)
-  - merge sort [link](./algorithm/SortAlgorithm/Merge Sort.md)
-  - quick sort [link](./algorithm/SortAlgorithm/Quick Sort.md)
-  - selection sort [link](./algorithm/SortAlgorithm/Selection Sort.md)
-  - shell sort [link](./algorithm/SortAlgorithm/Shell Sort.md)
-  - counting sort [link](./algorithm/SortAlgorithm/Counting Sort.md)
-  - radix sort [link](./algorithm/SortAlgorithm/Radix Sort.md)
-  - buket sort [link](./algorithm/SortAlgorithm/Buket Sort.md)
-  - tololgical sort [link](./algorithm/SortAlgorithm/Topological Sort.md)
+  - bubble sort [link](./algorithm/SortAlgorithm/BubbleSort.md)
+  - heap sort [link](./algorithm/SortAlgorithm/HeapSort.md)
+  - insertion sort [link](./algorithm/SortAlgorithm/InsertionSort.md)
+  - merge sort [link](./algorithm/SortAlgorithm/MergeSort.md)
+  - quick sort [link](./algorithm/SortAlgorithm/QuickSort.md)
+  - selection sort [link](./algorithm/SortAlgorithm/SelectionSort.md)
+  - shell sort [link](./algorithm/SortAlgorithm/ShellSort.md)
+  - counting sort [link](./algorithm/SortAlgorithm/CountingSort.md)
+  - radix sort [link](./algorithm/SortAlgorithm/RadixSort.md)
+  - buket sort [link](./algorithm/SortAlgorithm/BuketSort.md)
+  - tololgical sort [link](./algorithm/SortAlgorithm/TopologicalSort.md)
 - etc
-  - Fore-Fulkerson algorithm [link](./algorithm/01_Ford-Fulkerson Algorithm.md)
-  - Edmods-Karp algorithm [link](./algorithm/02_Edmonds-Karp Algorithm.md)
-  - Greedy algorithm [link](./algorithm/03_Greedy Algorithm.md)
+  - Fore-Fulkerson algorithm [link](./algorithm/01_Ford-Fulkerson_Algorithm.md)
+  - Edmods-Karp algorithm [link](./algorithm/02_Edmonds-Karp_Algorithm.md)
+  - Greedy algorithm [link](./algorithm/03_Greedy_Algorithm.md)
 
 
 
 <hr>
 
-## 알고리즘 문제 풀이 [link](./question)
+## 알고리즘문제풀이 [link](./question)
 
 ### 1. 프로그래머스
 
@@ -105,7 +105,7 @@
 
   K번째 수 [code](./question/programmers/k번째수.java)
 
-  가장 큰 수 [code](./question/programmers/biggest number.java)
+  가장 큰 수 [code](./question/programmers/biggestnumber.java)
 
   H-Index [code](./question/programmers/H_index.java)
 
