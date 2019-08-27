@@ -8,7 +8,7 @@
 
 ### 1. 프로그래머스
 
-- 해시 [link](https://programmers.co.kr/learn/courses/30/parts/12077)
+- **해시** [link](https://programmers.co.kr/learn/courses/30/parts/12077)
 
   완주하지 못한 선수 [code](./question/programmers/Hash_01.java)
 
@@ -18,7 +18,7 @@
 
   베스트 앨범 [code](./question/programmers/BestAlbum.java)
 
-- 스택/큐 [link](https://programmers.co.kr/learn/courses/30/parts/12081)
+- **스택/큐** [link](https://programmers.co.kr/learn/courses/30/parts/12081)
 
   프린터 [code](./question/programmers/Printer.java)
 
@@ -30,7 +30,7 @@
 
   주식가격 [code](./question/programmers/StockPrice.java)
 
-- 힙 [link](https://programmers.co.kr/learn/courses/30/parts/12117)
+- **힙** [link](https://programmers.co.kr/learn/courses/30/parts/12117)
 
   더 맵게 [code](./question/programmers/MoreSpicy.java)
 
@@ -40,7 +40,7 @@
 
   이중우선순위큐 [code](./question/programmers/DoubleQriorityQueue.java)
 
-- 정렬 [link](https://programmers.co.kr/learn/courses/30/parts/12198)
+- **정렬** [link](https://programmers.co.kr/learn/courses/30/parts/12198)
 
   K번째 수 [code](./question/programmers/k번째수.java)
 
@@ -48,13 +48,13 @@
 
   H-Index [code](./question/programmers/H_index.java)
 
-- 완전탐색 [link](https://programmers.co.kr/learn/courses/30/parts/12230)
+- **완전탐색** [link](https://programmers.co.kr/learn/courses/30/parts/12230)
 
   모의고사 [code](./question/programmers/Mocktest.java)
 
   카펫 [code](./question/programmers/Carpet.java)
 
-- 탐욕범(Greedy) [link](https://programmers.co.kr/learn/courses/30/parts/12244)
+- **탐욕법(Greedy)** [link](https://programmers.co.kr/learn/courses/30/parts/12244)
 
   체육복 [code](./question/programmers/Gymsuit.java)
 
@@ -68,7 +68,7 @@
 
   저울 [code](./question/programmers/Scale.java)
 
-- 동적계획법(Dynamic Programming) [link](https://programmers.co.kr/learn/courses/30/parts/12263)
+- **동적계획법(Dynamic Programming)** [link](https://programmers.co.kr/learn/courses/30/parts/12263)
 
   타일 장식물 [code](./question/programmers/Tile.java)
 
@@ -78,7 +78,7 @@
 
   도둑질 [code](./question/programmers/Theft.java)
 
-- 깊이/너비 우선 탐색(DFS/BFS) [link](https://programmers.co.kr/learn/courses/30/parts/12421)
+- **깊이/너비 우선 탐색(DFS/BFS)** [link](https://programmers.co.kr/learn/courses/30/parts/12421)
 
   타겟넘버 [code](./question/programmers/TargetNumber.java)
 
@@ -86,7 +86,7 @@
 
   단어 변환 [code](./question/programmers/ChangeWord.java)
 
-- 그래프 [link](https://programmers.co.kr/learn/courses/30/parts/14393)
+- **그래프** [link](https://programmers.co.kr/learn/courses/30/parts/14393)
 
   가장 먼 노드 [code](./question/programmers/Graph_01.java)
 
