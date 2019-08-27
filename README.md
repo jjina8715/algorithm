@@ -8,7 +8,8 @@
 
 <hr>
 
-## DataStructure [link](./datastructure)
+## DataStructure
+[link](./datastructure)
 
 - [LinkedList](./datastructure/LinkedList.md)
   - Doubly Linked List
@@ -39,7 +40,8 @@
 
 <hr>
 
-## Algorithm [link](./algorithm)
+## Algorithm
+[link](./algorithm)
 
 - [search](./algorithm/search/)
   - Interpolation search [link](./algorithm/search/)
@@ -65,7 +67,8 @@
 
 <hr>
 
-## 알고리즘문제풀이 [link](./question)
+## 알고리즘문제풀이
+[link](./question)
 
 ### 1. 프로그래머스
 
