@@ -10,7 +10,7 @@
     1. top<=0이라면 EmptyStack
     2. 아니라면 top--, top의 위치의 원소를 반환
 
-1. stack 인터페이스
+**①** stack 인터페이스
 
 ```java
 puvlic interface Stack{
@@ -22,7 +22,7 @@ puvlic interface Stack{
 }
 ```
 
-2. 1차원 배열로 구현한 stack
+**②** 1차원 배열로 구현한 stack
 
 - 크기 변경이 어렵고, 메모리의 낭비가 생길 수 있다.
 
@@ -92,7 +92,7 @@ puvlic interface Stack{
   }
   ```
 
-3. 연결리스트로 구현한 스택
+**③** 연결리스트로 구현한 스택
 
 - 배열로 구현한 스택의 단점을 해결할 수 있다.
 
