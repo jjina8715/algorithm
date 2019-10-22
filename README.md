@@ -4,6 +4,12 @@
 
 [Algorithm](#Algorithm)
 
+[SoftwareArchitecture](#SoftwareArchitecture)
+
+[OOP](#OOP)
+
+[DesignPattern](#DesignPattern)
+
 [알고리즘 문제 풀이](#알고리즘문제풀이)
 
 <hr>
@@ -46,26 +52,45 @@
 - [search](./algorithm/search/)
   - Interpolation search [link](./algorithm/search/)
   - backtracking [link](./algorithm/search/)
-- [sort](./algorithm/SortAlgorithm/)
-  - bubble sort [link](./algorithm/SortAlgorithm/BubbleSort.md)
-  - heap sort [link](./algorithm/SortAlgorithm/HeapSort.md)
-  - insertion sort [link](./algorithm/SortAlgorithm/InsertionSort.md)
-  - merge sort [link](./algorithm/SortAlgorithm/MergeSort.md)
-  - quick sort [link](./algorithm/SortAlgorithm/QuickSort.md)
-  - selection sort [link](./algorithm/SortAlgorithm/SelectionSort.md)
-  - shell sort [link](./algorithm/SortAlgorithm/ShellSort.md)
-  - counting sort [link](./algorithm/SortAlgorithm/CountingSort.md)
-  - radix sort [link](./algorithm/SortAlgorithm/RadixSort.md)
-  - buket sort [link](./algorithm/SortAlgorithm/BuketSort.md)
-  - tololgical sort [link](./algorithm/SortAlgorithm/TopologicalSort.md)
+- [sort](./algorithm/sortAlgorithm/)
+  - bubble sort [link](./algorithm/sortAlgorithm/BubbleSort.md)
+  - heap sort [link](./algorithm/sortAlgorithm/HeapSort.md)
+  - insertion sort [link](./algorithm/sortAlgorithm/InsertionSort.md)
+  - merge sort [link](./algorithm/sortAlgorithm/MergeSort.md)
+  - quick sort [link](./algorithm/sortAlgorithm/QuickSort.md)
+  - selection sort [link](./algorithm/sortAlgorithm/SelectionSort.md)
+  - shell sort [link](./algorithm/sortAlgorithm/ShellSort.md)
+  - counting sort [link](./algorithm/sortAlgorithm/CountingSort.md)
+  - radix sort [link](./algorithm/sortAlgorithm/RadixSort.md)
+  - buket sort [link](./algorithm/sortAlgorithm/BuketSort.md)
+  - tololgical sort [link](./algorithm/sortAlgorithm/TopologicalSort.md)
+- [math](./algorithm/math/)
+  - Linear Algebra [link](./algorithm/math/LinearAlgebra.md)
 - etc
   - Fore-Fulkerson algorithm [link](./algorithm/01_Ford-Fulkerson_Algorithm.md)
   - Edmods-Karp algorithm [link](./algorithm/02_Edmonds-Karp_Algorithm.md)
   - Greedy algorithm [link](./algorithm/03_Greedy_Algorithm.md)
 
+<hr>
 
+## SoftwareArchitecture
+
+- REST [link](./swarchitecture/REST.md)
 
 <hr>
+
+## OOP
+
+- SOLID [link](./oop/OOP_원칙SOLID.md)
+
+<hr>
+
+## DesignPattern
+
+- DesignPattern [link](./designpattern/DesignPattern.md)
+
+<hr>
+
 
 ## 알고리즘문제풀이
 [link](./question)
